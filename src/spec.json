@@ -1,0 +1,255 @@
+{
+  "title": "Gestione prenotazioni sale",
+  "description": "Prototipo navigabile per consultare il calendario settimanale delle sale comunali, verificare le disponibilità e registrare nuove prenotazioni con dati di fantasia.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica settimanale",
+      "description": "Riepilogo delle prenotazioni e calendario della settimana, consultabile per sala e fascia oraria.",
+      "metrics": [
+        {
+          "label": "Prenotazioni in settimana",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili oggi",
+          "value": "3"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "42"
+        },
+        {
+          "label": "Richieste da verificare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Lunedì",
+        "Martedì",
+        "Mercoledì",
+        "Giovedì",
+        "Venerdì"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "9:00–10:00 · Nubi",
+          "Libera",
+          "10:00–11:30 · Vela",
+          "Libera",
+          "14:00–15:00 · Lumo"
+        ],
+        [
+          "Vela",
+          "Libera",
+          "9:30–10:30 · Lumo",
+          "Libera",
+          "11:00–12:00 · Nubi",
+          "Libera"
+        ],
+        [
+          "Nubi",
+          "10:00–11:00 · Vela",
+          "Libera",
+          "9:00–10:00 · Lumo",
+          "Libera",
+          "10:30–11:30 · Vela"
+        ],
+        [
+          "Brina",
+          "Libera",
+          "14:00–15:00 · Nubi",
+          "Libera",
+          "9:00–10:00 · Vela",
+          "Libera"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario",
+      "title": "Calendario sale",
+      "description": "Vista settimanale filtrabile per sala e stato, con orari, richiedenti inventati e organizzazioni di fantasia.",
+      "metrics": [
+        {
+          "label": "Eventi visualizzati",
+          "value": "8"
+        },
+        {
+          "label": "Sale in calendario",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Data",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì 8 giugno",
+          "9:00–10:00",
+          "Nubi",
+          "Cerchio delle Lanterne",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Lunedì 8 giugno",
+          "10:00–11:00",
+          "Vela",
+          "Officina dei Tigli",
+          "12",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Martedì 9 giugno",
+          "9:30–10:30",
+          "Lumo",
+          "Trama di Rugiada",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Martedì 9 giugno",
+          "14:00–15:00",
+          "Nubi",
+          "Orizzonte di Carta",
+          "10",
+          "Da verificare"
+        ],
+        [
+          "Lumo",
+          "Mercoledì 10 giugno",
+          "10:00–11:30",
+          "Vela",
+          "Giardino delle Idee",
+          "14",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Mercoledì 10 giugno",
+          "9:00–10:00",
+          "Lumo",
+          "Cantiere delle Nuvole",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Giovedì 11 giugno",
+          "11:00–12:00",
+          "Nubi",
+          "Bottega dei Mirti",
+          "9",
+          "Da verificare"
+        ],
+        [
+          "Brina",
+          "Venerdì 12 giugno",
+          "9:00–10:00",
+          "Vela",
+          "Sentiero Blu",
+          "7",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Registra una richiesta di prenotazione. Le disponibilità vengono verificate consultando il calendario settimanale.",
+      "metrics": [],
+      "columns": [
+        "Sala",
+        "Data",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Sala",
+        "Data",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Elenco sale",
+      "description": "Consulta capienza e dotazioni delle sale disponibili per le riunioni.",
+      "metrics": [
+        {
+          "label": "Sale attive",
+          "value": "4"
+        },
+        {
+          "label": "Capienza complessiva",
+          "value": "46"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Piano",
+        "Accessibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "12",
+          "Schermo, lavagna",
+          "Piano 1",
+          "Accessibile",
+          "Attiva"
+        ],
+        [
+          "Vela",
+          "10",
+          "Proiettore, lavagna",
+          "Piano 2",
+          "Accessibile",
+          "Attiva"
+        ],
+        [
+          "Nubi",
+          "16",
+          "Schermo, conferenza audio",
+          "Piano 1",
+          "Accessibile",
+          "Attiva"
+        ],
+        [
+          "Brina",
+          "8",
+          "Lavagna",
+          "Piano terra",
+          "Accessibile",
+          "Attiva"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
